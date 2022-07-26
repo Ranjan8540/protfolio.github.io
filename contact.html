@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio website</title>
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 45px;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+.logo{
+	color: rgb(20, 20, 20);
+	font-size: 35px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+span{
+	color: #f9004d;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px;
+}
+nav ul li a{
+	color: rgb(14, 14, 14);
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+	font-size: 25px;
+}
+nav ul li a:hover{
+	color: #f9004d;
+	transition: .4s;
+}
+.btn{
+	background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform .4s; 
+}
+.btn:hover{
+	transform: scale(1.2);
+}
+  .start{
+    
+    margin-left: 25px;
+    height: 600px;
+  width:900px;
+    background-color : rgb(133, 125, 235);
+}
+
+.hh{
+    padding-top:10px ;
+    color: rgb(250, 248, 248);
+}
+input{
+    width: 90%;
+    border-radius: 3px;
+    border-color: aliceblue;
+}
+form{
+    margin-left: 45px;
+    margin-top: 20px;
+}
+textarea{
+    border-radius: 3px;
+    border-color: aliceblue;
+}
+label{
+    width: 30%;
+    color: rgb(250, 246, 246);
+}
+.submit{
+    width: 22%;
+    height: 7%;
+    color: rgb(252, 249, 249);
+    background-color: rgb(247, 216, 40);
+    border-color: rgb(247, 216, 40);
+    border-radius: 3px;
+}
+</style>
+</head>
+<body>
+	<!----hero Section start---->
+
+	<div class="hero">
+		<nav>
+			<h2 class="logo">Portfo<span>lio</span></h2>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a  href="about.html">About Us</a></li>
+				<li><a href="project.html">project</a></li>
+				<li><a href="skills.html">Skills</a></li>
+				<li><a class="active" href="contact.html">Contact Us</a></li>
+			</ul>
+			<a href="#" class="btn">Download cv</a>
+		</nav>
+  </div>
+  <div class="start">
+    <form>
+    <div class="hh"><h3>Get in touch</h3></div><br>
+    <label>Name*</label><br>
+    <input type="text"><br><br>
+    <label>Email*</label><br>
+    <input type="text"><br><br>
+    <label>Phone</label><br>
+    <input type="text"><br><br>
+    <label>Message*</label><br>
+    <textarea cols="33" rows="5"></textarea><br><br>
+    <button type="submit" name="submit" class="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>
